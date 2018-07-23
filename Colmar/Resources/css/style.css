@@ -1,0 +1,391 @@
+/*----Universal Code----*/
+
+html {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 32px 0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 16px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin: 8px 16px
+}
+
+p {
+  line-height: 1.4;
+  margin-bottom: 24px;
+}
+
+.container {
+  display: flex;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+/*----Header----*/
+
+header .container {
+  height: 64px;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.logo img {
+  height: 2rem;
+}
+
+.logo .colmar {
+  font-family: 'Montserrat', sans-serif;
+  color: #00695c;
+  font-weight: 700;
+}
+
+.logo .academy {
+  font-family: 'Montserrat', sans-serif;
+  color: grey;
+}
+
+.logo span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+nav {
+  align-items: center;
+}
+
+nav ul {
+
+}
+
+nav li {
+  display: inline;
+  margin-left: 16px;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/*---Main Story---*/
+
+.main-story {
+  background-color: #cfd8dc;
+}
+
+.main-image {
+  overflow: hidden;
+  max-width: 60%;
+  margin: 32px 24px 32px 0;
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-title {
+  max-width: 40%;
+}
+
+.main-title span {
+  display: block;
+  background-color: #00695c;
+  padding: 8px 0 8px 0;
+  text-align: center;
+  color: white;
+  max-width: 95%;
+}
+
+@media only screen and (max-width: 480px) {
+  .main-story .center {
+    flex-direction: column;
+  }
+
+  .main-image,
+  .main-title {
+    max-width: 100%;
+  }
+
+  .main-image {
+    margin: 0;
+  }
+
+  .main-story .container {
+    margin: 0;
+  }
+
+  .main-title {
+    margin: 0 16px;
+  }
+
+  .main-title span {
+    margin-bottom: 32px;
+  }
+}
+
+/*---Highlights and Features---*/
+
+.highlights-stories {
+  max-width: 40%;
+  margin: 16px 0;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.feature:hover {
+  background-color: #cfd8dc;
+}
+
+.feature-image {
+  max-width: 35%;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.feature-content {
+  max-width: 65%;
+  height: auto;
+}
+
+.feature-content span {
+  display: block;
+  margin-left: 16px;
+}
+
+.feature-content a {
+  display: block;
+  margin-left: 16px;
+}
+
+img.feature-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .highlights-main {
+    display: none;
+  }
+
+  .highlights-stories {
+    max-width: 100%;
+  }
+
+  img.feature-desktop {
+    display: none;
+  }
+
+  img.feature-mobile {
+    display: block;
+  }
+
+  .feature {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feature-image {
+    min-width: 100%;
+  }
+
+  .feature-image img {
+    max-width: 100%;
+  }
+
+  .feature-content {
+    max-width: 100%;
+  }
+}
+
+/*---Start Learning - majors section---*/
+
+.program {
+  background-color: #cfd8dc;
+}
+
+.program h1,
+.thesis h1 {
+  text-align: center;
+  padding-top: 32px;
+}
+
+.majors {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 48px;
+  margin-right: 40px;
+  padding-bottom: 24px;
+}
+
+.majors img {
+  max-width: 100%;
+  height: auto;
+}
+
+.majors .container {
+  flex-wrap: wrap;
+}
+
+.major {
+  margin-right: 32px;
+  background-color: white;
+  max-width: 30%;
+  margin: 16px;
+}
+
+.major-content {
+}
+
+.major-content p {
+  margin: 0px 16px 16px;
+}
+
+.majors.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .majors.desktop {
+    display: none;
+  }
+
+  .program {
+    background-color: white;
+  }
+
+  .majors.mobile {
+    display: block;
+  }
+
+  .majors.mobile h3 {
+    padding: 16px 16px 24px;
+    background-color: #00695c;
+    color: white;
+  }
+}
+
+/*---Thesis---*/
+
+.thesis h1 {
+
+}
+
+.main-video {
+  overflow: hidden;
+  max-width: 60%;
+  margin: 32px 24px 32px 0;
+}
+
+.main-video video {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .video-content {
+    display: none;
+  }
+
+  .main-video {
+    margin: 0;
+  }
+
+  .thesis .highlights .container {
+    margin: 0px;
+  }
+
+  .program, .thesis {
+    border: 1px solid silver;
+  }
+
+  .video-features {
+    display: none;
+  }
+
+  .main-video {
+    max-width: 100%;
+  }
+}
+
+
+/*----FOOTER----*/
+
+footer {
+  border-top: 1px solid silver;
+  font-size: 0.8rem;
+}
+
+footer .container {
+  height: 64px;
+  align-items: center;
+}
+
+footer li {
+  display: inline;
+  margin-left: 8px;
+}
+
+footer span {
+  flex-grow: 2;
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    padding-top: 32px;
+  }
